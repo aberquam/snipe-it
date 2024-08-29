@@ -4,6 +4,7 @@ use App\Http\Controllers\Account;
 use App\Http\Controllers\ActionlogController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CompaniesController;
+use App\Http\Controllers\CustomController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepartmentsController;
 use App\Http\Controllers\DepreciationsController;
@@ -26,6 +27,8 @@ use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Livewire\Importer;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+
+Route::get('/Relays-page', [CustomController::class, 'show']);
 
 Route::group(['middleware' => 'auth'], function () {
     /*

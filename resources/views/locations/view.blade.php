@@ -109,6 +109,13 @@
                     </span>
                   </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/Relays-page') }}">
+                    <i class="fa fa-cogs"></i> <!-- You can choose an icon that fits your page -->
+                     <p>Relays Page</p>
+                </a>
+            </li>
               
               <li>
                   <a href="#history" data-toggle="tab">
